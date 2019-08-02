@@ -4336,8 +4336,6 @@ IS
 
       --DBMS_OUTPUT.PUT_LINE('End PV update  -------------------');
 
-      COMMIT;
-
     END IF;
 
     EXCEPTION
@@ -5893,8 +5891,6 @@ BEGIN
 	ELSIF V_FORM_TYPE = 'CMSERLR' THEN
 		SP_UPDATE_PV_ERLR(V_PROCID, V_XMLDOC);		
 	END IF;
-
-	COMMIT;
 
 	EXCEPTION
 	WHEN OTHERS THEN
