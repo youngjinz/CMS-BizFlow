@@ -390,7 +390,7 @@ IS
 					END IF;
 				END IF;
 				IF V_DISAPPROVAL_CNT = 0 THEN
-					SP_UPDATE_PV_BY_XPATH(I_PROCID, I_FIELD_DATA, 'disapproverName', '');
+					SP_UPDATE_PV_BY_XPATH(I_PROCID, I_FIELD_DATA, 'disapproverName', NULL);
 				END IF;
 			ELSIF 'LE' = V_INCENTIVE_TYPE THEN
 				SP_UPDATE_PV_BY_XPATH(I_PROCID, I_FIELD_DATA, 'leSupport', '/formData/items/item[id="supportLE"]/value/text()');
@@ -449,7 +449,7 @@ IS
 					END IF;
 				END IF;
 				IF V_DISAPPROVAL_CNT = 0 THEN
-					SP_UPDATE_PV_BY_XPATH(I_PROCID, I_FIELD_DATA, 'disapproverName', '');
+					SP_UPDATE_PV_BY_XPATH(I_PROCID, I_FIELD_DATA, 'disapproverName', NULL);
 				END IF;
 			END IF;
 
